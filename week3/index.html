@@ -4,24 +4,92 @@
 <style>
 
 #myTitle {
-  background-color: lightpink;
-  color: black;
-  padding: 40px;
-  text-align: center;
-  font-size: 300%;
+  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  	background-color: lightpink;
+  	color: white;
+  	padding: 40px;
+  	text-align: center;
+  	font-size: 300%;
 }
+
+#myPic {
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin:auto;
+	border-style: solid;
+	border-radius: 100%;
+	border-color: pink;
+}
+
+div {
+  	display:inline-block;
+}
+
+
+
+.interest {
+	margin-top:50px;
+	width:2300px;
+}
+
+.interest div{
+	margin-left:40px;
+	margin-right:40px;
+}
+
+.text h2 {
+	text-align:center;
+}
+
 body {
   background-color: lightblue;
+  color: white;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 </style>
 </head>
+
 <body>
 
 
-<h1 id="myTitle">Jorenzo Martin Reyes</h1>
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+	<h1 id="myTitle">Jorenzo Martin Reyes</h1>
+	<img id="myPic" src="C:\Users\joren\Desktop\me.jpg" alt="me">
+
+
+<div class="interest">
+	<div class="col-3 text" style="background-color:lightpink;"> 
+		<h2> Hobbies </h2>
+
+	</div>
+
+	<div class="col-3 text" style="background-color:lightpink;"> 
+		<h2> Socials </h2>
+
+	</div>
+
+	<div class="col-3 text" style="background-color:lightpink;"> 
+		<h2> Emi </h2>
+	</div>
+</div>
+
+
+
+
+
 
 
 </body>
