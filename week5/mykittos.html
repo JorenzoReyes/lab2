@@ -51,14 +51,37 @@ body {
 	margin-left:20px;
 }
 
+.kittoName {
+	text-align:left;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#harriet img {
+	width:45%;
+	border-radius: 50px;
+	border-color: pink;
+	border-style: solid;
+}
+
 #harriet {
 	margin-top: 100px;
 	margin-left: 100px;
 }
 
+#harrietTxt {
+	display:inline;
+}
+
+#harry img {
+	height:45%;
+	border-radius: 50px;
+	border-color: pink;
+	border-style: solid;
+}
+
 #harry {
 	margin-top: 100px;
-	margin-left: 100px;
+	margin-left: 1825px;
 }
 
 #hagrid {
@@ -82,56 +105,66 @@ body {
 		<h1 id="myTitle">My Kittos</h1>
 	</div>
 
-	<div>
-		<div>
-			<img id="harriet" src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
+	<div id="col-12">
+		<div id="harriet">
+			<h1 class="kittoName"></h1>
 
+			<img src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
+
+			<h6 id="harrietTxt">Ayo</h6>
+			
 		</div>
 
 		<div id="harry">
-			<img src="" alt="">
+			<h1 class="kittoName"></h1>
+			<img src="https://i.imgur.com/3KJ5sJy.jpg" alt="harry stairs">
 			
 		</div>
 
 		<div id="hagrid">
-			<img src="" alt="">
+			<h1 class="kittoName"></h1>
+			<img src="https://i.imgur.com/uskv9su.jpg" alt="hagrid pacute">
 			
 		</div>
 
 		<div id="bunini">
-			<img src="" alt="">
+			<h1 class="kittoName"></h1>
+			<img src="https://i.imgur.com/cFx1SuK.jpg" alt="bunini maarte">
 			
 		</div>
 	</div>
 
 <script>
 
-const harriet = {
-	name: "Harriet",
-	age: "6 years old",
-	eyeColor: "Hazel"
+const kittoNames = {
+	harrietName: "Harriet",
+	harryName: "Harry", 
+	hagridName: "Hagrid",
+	buniniName: "Bunini"
 }
 
-const harry = {
-	name: "Harry",
-	age: "1 year old",
-	eyeColor: "Hazel"
+const kittoAge = {
+	harrietAge: "6",
+	harryAge: "1",
+	hagridAge: "1",
+	buniniName: "1"
 }
 
-const bunini = {
-	name: "Bunini",
-	age: "1 year old",
-	eyeColor: "Hazel"
-}
-
-const hagrid = {
-	name: "Hagrid",
-	age: "1 year old",
-	eyeColor: "Blue"
+const kittoEyeColor = {
+	harrietEye: "Hazel",
+	harryAge: "Hazel",
+	hagridAge: "Hazel",
+	buniniName: "Blue"
 }
 
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
-        
+var kittoName = document.getElementsByClassName("kittoName");
+kittoName[0].innerHTML = kittoNames.harrietName;
+kittoName[1].innerHTML = kittoNames.harryName;
+kittoName[2].innerHTML = kittoNames.hagridName;
+kittoName[3].innerHTML = kittoNames.buniniName;
+
+
 </script>
 </body>
 
