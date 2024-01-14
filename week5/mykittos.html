@@ -14,21 +14,6 @@
 </head>
 <style>
 
-#myTitle {
-  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  	background-color: lightpink;
-  	color: white;
-  	text-align: center;
-  	font-size: 300%;
-	padding:20px;
-	font-family:Mukta,serif;
-}
-
-body {
-  	background-color: lightblue;
-  	color: white;
-}
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -41,25 +26,96 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+body {
+  	background-color: lightblue;
+  	color: white;
+}
+
+#myTitle {
+  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  	background-color: lightpink;
+  	color: white;
+  	text-align: center;
+  	font-size: 300%;
+	padding:20px;
+	font-family:Mukta,serif;
+}
+
+#backArrow {
+	position:absolute;
+	border-style: solid;
+	border-radius: 100%;
+	border-color:pink;
+	margin-top:20px;
+	margin-left:20px;
+}
+
 </style>
 
 <body id="bodyImage">
-
+	
 	<div class="col-12">
+		<div>
+			<a href="index.html"> <img id="backArrow" src="C:\Users\joren\Desktop\yehey.jpg"></a>
+		</div>
 		<h1 id="myTitle">My Kittos</h1>
+	</div>
 
+	<div>
+		<div id="harriet">
+			<img src="C:\Users\joren\Desktop\20231201_164003.jpg" alt="harriet skrem">
+
+		</div>
+
+		<div id="harry">
+			<img src="" alt="">
+			
+		</div>
+
+		<div id="hagrid">
+			<img src="" alt="">
+			
+		</div>
+
+		<div id="bunini">
+			<img src="" alt="">
+			
+		</div>
 	</div>
 
 <script>
-	
+
 const harriet = {
 	name: "Harriet",
 	age: "6 years old",
 	eyeColor: "Hazel"
 }
 
+const harry = {
+	name: "Harry",
+	age: "1 year old",
+	eyeColor: "Hazel"
+}
+
+const bunini = {
+	name: "Bunini",
+	age: "1 year old",
+	eyeColor: "Hazel"
+}
+
+const hagrid = {
+	name: "Hagrid",
+	age: "1 year old",
+	eyeColor: "Blue"
+}
+
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
-        
         
 </script>
 </body>
+
+<!--SOURCES
+home icon - https://www.pinterest.ph/pin/38913984274393009/
+bgimage https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif
+-->

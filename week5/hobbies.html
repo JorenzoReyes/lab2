@@ -17,6 +17,16 @@ body {
   	color: white;
 }
 
+#myTitle {
+  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  	background-color: lightpink;
+  	color: white;
+  	text-align: center;
+  	font-size: 300%;
+	padding:20px;
+	font-family:Mukta,serif;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -29,16 +39,35 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+#backArrow {
+	position:absolute;
+	border-style: solid;
+	border-radius: 100%;
+	border-color:pink;
+	margin-top:20px;
+	margin-left:20px;
+}
+
 </style>
     
 <body id="bodyImage">
     
-    <h1></h1>
+    <div class="col-12">
+        <div>
+			<a href="index.html"> <img id="backArrow" src="C:\Users\joren\Desktop\yehey.jpg"></a>
+		</div>
+		<h1 id="myTitle">My Hobbies</h1>
 
+	</div>
 
 <script>
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
-        
-        
+
 </script>
 </body>
+
+<!--SOURCES
+home icon - https://www.pinterest.ph/pin/38913984274393009/
+bgimage https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif
+-->
