@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
 	<!--Bootstrap framework-->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  	<!--Favicon-->
 <link rel="icon" type="image/x-icon" href="https://64.media.tumblr.com/2500d6f4dc96ba1aaf5447bf53c68a4a/caf1519f5f2ac500-01/s500x750/5c44ebd6c3486104d4089883d4f19446d01a1328.jpg">
@@ -38,6 +37,7 @@ body {
   	color: white;
   	text-align: center;
   	font-size: 300%;
+	width:100%;
 	padding:20px;
 	font-family:Mukta,serif;
 }
@@ -69,13 +69,9 @@ body {
 	margin-top: 100px;
 	margin-left: 100px;
 }
-
-#harrietTxt {
-	display:inline;
-}
-
 #harry img {
-	height:45%;
+    height:45%;
+    width:auto;
 	border-radius: 50px;
 	border-color: pink;
 	border-style: solid;
@@ -83,8 +79,9 @@ body {
 
 #harry {
 	margin-top: 100px;
-	margin-left: 1825px;
+	margin-left: 100px;
 }
+
 
 #hagrid {
 	margin-top: 100px;
@@ -92,7 +89,8 @@ body {
 }
 
 #hagrid img {
-	height:45%;
+    height:45%;
+    width:auto;
 	border-radius: 50px;
 	border-color: pink;
 	border-style: solid;
@@ -100,15 +98,17 @@ body {
 
 #bunini {
 	margin-top: 100px;
-	margin-left: 1825px;
+	margin-left: 100px;
 }
 
 #bunini img {
-	height:45%;
+    height:45%;
+    width:auto;
 	border-radius: 50px;
 	border-color: pink;
 	border-style: solid;
 }
+
 
 </style>
 
@@ -121,40 +121,37 @@ body {
 		<h1 id="myTitle">My Kittos</h1>
 	</div>
 
-	<div id="col-12">
-		<div id="harriet">
-			<h1 class="kittoName">  </h1> 
+	<div id="harriet">
+		<h1 class="kittoName">  </h1> 
 
-			<img src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
+		<img src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
 
-			<h6 id="harrietTxt"> </h6>
-			<p><span id="harrietImgDate"> </span></p>
+		<h6 id="harrietTxt"> </h6>
+		<p id="harrietImgDate"></p>
+	</div>
+
+	<div id="harry">
+		<h1 class="kittoName"></h1>
+		<img src="https://i.imgur.com/3KJ5sJy.jpg" alt="harry stairs">
+
+		<p><span id="harryImgDate"> </span></p>
 			
-		</div>
+	</div>
 
-		<div id="harry">
-			<h1 class="kittoName"></h1>
-			<img src="https://i.imgur.com/3KJ5sJy.jpg" alt="harry stairs">
+	<div id="hagrid">
+		<h1 class="kittoName"></h1>
+		<img src="https://i.imgur.com/uskv9su.jpg" alt="hagrid pacute">
 
-			<p><span id="harryImgDate"> </span></p>
+		<p><span id="hagridImgDate"> </span></p>
 			
-		</div>
+	</div>
 
-		<div id="hagrid">
-			<h1 class="kittoName"></h1>
-			<img src="https://i.imgur.com/uskv9su.jpg" alt="hagrid pacute">
+	<div id="bunini">
+		<h1 class="kittoName"></h1>
+		<img src="https://i.imgur.com/cFx1SuK.jpg" alt="bunini maarte">
 
-			<p><span id="hagridImgDate"> </span></p>
+		<p><span id="buniniImgDate"> </span></p>
 			
-		</div>
-
-		<div id="bunini">
-			<h1 class="kittoName"></h1>
-			<img src="https://i.imgur.com/cFx1SuK.jpg" alt="bunini maarte">
-
-			<p><span id="buniniImgDate"> </span></p>
-			
-		</div>
 	</div>
 
 <script>
@@ -173,7 +170,7 @@ const harry = new Cat ("Harry", 1, "Yellow", "2024-01-10")
 const hagrid = new Cat ("Hagrid", 1, "Blue", "2024-01-10")
 const bunini = new Cat ("Bunini", 1, "Yellow", "2023-12-24")
 
-document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
+
 var kittoName = document.getElementsByClassName("kittoName");
 
 kittoName[0].innerHTML = harriet.name;
@@ -192,5 +189,4 @@ document.getElementById("buniniImgDate").innerHTML = bunini.date;
 
 <!--SOURCES
 home icon - https://www.pinterest.ph/pin/38913984274393009/
-bgimage https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif
 -->

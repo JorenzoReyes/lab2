@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
 	<title>Pleiades</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Fonts-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
 	<!--Bootstrap framework-->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  	<!--Favicon-->
 <link rel="icon" type="image/x-icon" href="https://64.media.tumblr.com/2500d6f4dc96ba1aaf5447bf53c68a4a/caf1519f5f2ac500-01/s500x750/5c44ebd6c3486104d4089883d4f19446d01a1328.jpg">
 <style>
 #myTitle {
-  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   	background-color: lightpink;
-  	color: white;
-  	text-align: center;
-  	font-size: 300%;
 	padding:20px;
-	font-family:Mukta,serif;
+	margin:auto;
+	display:block;
 }
 
 #myPic {
@@ -31,10 +28,7 @@
 	border-radius: 100%;
 	border-color: pink;
 	margin-top:20px;
-}
-
-div {
-  	display:inline-block;
+	margin-bottom:20px;
 }
 
 .interest {
@@ -49,6 +43,8 @@ div {
 .text {
 	margin:15px;
 	margin-right:20px;
+	border-radius: 50px;
+	background-color:lightpink;
 }
 .text h2 {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -85,7 +81,48 @@ a:link {
 }
 
 a:hover h2 {
-	color:rgb(173, 151, 190);
+	color:rgb(170, 150, 190);
+}
+
+#self-info {
+	background-color: aliceblue;
+	text-align: center;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: lightpink;
+	font-size: 25px;
+	color:pink;
+	width:50%;
+	margin:auto;
+}
+
+.info {
+  margin: auto;
+  width: 60%;
+}
+
+#name {
+	color:rgb(114, 74, 81);
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav ul {
+	margin:auto;
+	width:100%;
+}
+
+.nav li {
+ 	display: inline-block;
 }
 
 </style>
@@ -93,32 +130,34 @@ a:hover h2 {
 
 <body id="bodyImage">
 
-	<div class="col-12">
-		<h1 id="myTitle"></h1>
-		<img id="myPic" src="https://scontent.fmnl7-2.fna.fbcdn.net/v/t39.30808-6/335627711_1843974389312839_8929661110043612149_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEfvkwz64CQdz9uaRCfW_ge7Fpbs2CVwiLsWluzYJXCIsVj5ebYNbfozDIvkB4jbKk&_nc_ohc=y_NUQzKFJDIAX8AfgUO&_nc_ht=scontent.fmnl7-2.fna&oh=00_AfA6kPJHKNhvEVWDOufJtIC6lggohJKcYYtqsBgaOhElyg&oe=65AD33D0" alt="Me">
-	</div>
-	
-	
-<div class="interest col-12">
-	<div class="col-4 text" style="background-color:lightpink;"> 
-		<a href="mykittos.html"> <h2 class="boxText"> My Kittos </h2> </a>
-	</div>
+<div class="col-12" style="background-color: lightpink";>
+	<img id="myTitle" src="https://i.imgur.com/qwATS60.gif" alt="me">
+</div>	
 
-	<div class="col-4 text" style="background-color:lightpink;"> 
-		<a href="https://s.team/y23/kbpfmwr?l=english"> <h2 class="boxText"> Steam 2023 Review </h2> </a>
+<div class="col-12">
+	<img id="myPic" src="https://i.imgur.com/SWEFxQS.jpg" alt="Me">
+</div>
 
-	</div>
+<div id="self-info">
+	<p>Hello! welcome to my personal page!</p>
+	<p> I'm <span id="name"></span> </p>
+</div>
 
-	<div class="col-4 text" style="background-color:lightpink;"> 
+<div class="nav">
+<ul class="interest col-12">
+	<li class="col-4 text">
+		<a href="kittos.html"> <h2 class="boxText"> My Kittos </h2> </a>
+	</li>
+	<li class="col-4 text">
 		<a href="hobbies.html"> <h2 class="boxText"> Hobbies </h2> </a>
-
-	</div>
-
-	
+	</li>
+	<li class="col-5 text">
+		<a href="https://s.team/y23/kbpfmwr?l=english"> <h2 class="boxText"> Steam 2023 Review </h2> </a>
+	</li>
+  </ul>
 </div>
 
 <script>
-
 const me = {
 	firstName: "Jorenzo Martin",
 	lastName: "Reyes",
@@ -127,9 +166,12 @@ const me = {
 	eyeColor: "Brown",
 	age: "Not willing to disclose eme"
 };
-document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
 
-document.getElementById("myTitle").innerHTML = me.firstName + " " + me.lastName;
+const name = () => {
+    return me.firstName + " " + me.lastName;
+}
+
+document.getElementById("name").innerHTML = name();
 </script>
 
 
@@ -137,6 +179,7 @@ document.getElementById("myTitle").innerHTML = me.firstName + " " + me.lastName;
 </html>
 
 <!--SOURCES
-home icon - https://www.pinterest.ph/pin/38913984274393009/
-bgimage https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif
+favicon - https://www.pinterest.ph/pin/38913984274393009/
+home gif -  https://usagif.com/gif/cinnamoroll-super-happy-sticker-usagif/
+
 -->
