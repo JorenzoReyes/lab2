@@ -143,36 +143,41 @@ a:hover h2 {
 
 <body id="bodyImage">
 
-<div class="col-12" style="background-color: lightpink";>
-	<img id="myTitle" src="https://i.imgur.com/qwATS60.gif" alt="me">
+<div class='col-12' style='background-color: lightpink';>
+	<img id='myTitle' src='https://i.imgur.com/qwATS60.gif' alt='me'>
 </div>	
 
-<div class="col-12">
-	<img id="myPic" src="https://i.imgur.com/SWEFxQS.jpg" alt="Me">
+<div class='col-12'>
+	<img id='myPic' src='https://i.imgur.com/SWEFxQS.jpg' alt='Me'>
 </div>
 
-<div id="self-info">
-	<p>Hello! welcome to my personal page!</p>
-	<p> I'm <span id="name"></span> from <span id="courseSection"></span> </p>
+<div id='self-info'>
+	<p>
+		<?php
+		$intro = "Hello! welcome to my personal page!";
+		echo"". $intro ."";
+		?>
+	</p>
+	<p> I'm <span id='name'></span> from <span id='courseSection'></span> </p>
 </div>
 
-<div class="nav">
-<ul class="interest col-12">
-	<li class="col-4 text">
-		<a href="kittos.html"> <h2 class="boxText"> My Kittos </h2> </a>
+<div class='nav'>
+<ul class='interest col-12'>
+	<li class='col-4 text'>
+		<a href='kittos.html'> <h2 class='boxText'> My Kittos </h2> </a>
 	</li>
-	<li class="col-4 text">
-		<a href="hobbies.html"> <h2 class="boxText"> Hobbies </h2> </a>
+	<li class='col-4 text'>
+		<a href='hobbies.html'> <h2 class='boxText'> Hobbies </h2> </a>
 	</li>
-	<li class="col-5 text">
-		<a href="https://s.team/y23/kbpfmwr?l=english"> <h2 class="boxText"> Steam 2023 Review </h2> </a>
+	<li class='col-5 text'>
+		<a href='https://s.team/y23/kbpfmwr?l=english'> <h2 class='boxText'> Steam 2023 Review </h2> </a>
 	</li>
   </ul>
 </div>
 
 
-<div id="jumpscare">
-	<p id="jumpscareButton" onclick="pleaseWait()">
+<div id='jumpscare'>
+	<p id='jumpscareButton' onclick='pleaseWait()'>
 	<?php
 	echo "Click me for a jumpscare."
 	?>
