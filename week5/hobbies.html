@@ -49,6 +49,31 @@ body {
 	margin-left:20px;
 }
 
+.titles {
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 100px;
+	margin: 30px 800px 30px 800px;
+	border-radius:25px;
+	background-color:lightpink;
+}
+
+.subtitles {
+	border-radius:25px;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 50px;
+	background-color:lightpink;
+	margin: 0px 800px 0px 800px;
+}
+.subtext {
+	border-radius:25px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size:15px;
+	text-align:center;
+	background-color:lightpink;
+	margin: 0px 800px 15px 800px;
+}
 </style>
     
 <body id="bodyImage">
@@ -61,9 +86,82 @@ body {
 
 	</div>
 
+<div>
+	<h1 class="titles">Listening to music</h1>
+	<h6 class="subtitles">My top 10 albums, as of the moment</h6>
+	<h6 class="subtext">it was hard for me to decide what my all time favorite albums are</h6>
+	
+	<div class="col-4">
+		<p> bruh</p>
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+</div>
+
+<div>
+	<h1 class="titles">Playing video games</h1>
+
+	<div class="col-4">
+		<p> bruh</p>
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+</div>
+
+<div>
+	<h1 class="titles">Watching movies</h1>
+
+	<div class="col-4">
+		<p> bruh</p>
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+	
+	<div class="col-4">
+
+	</div>
+</div>
+
 <script>
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
-
+class Music {
+	constructor(name, year, artist)
+	{
+		this.name = name;
+		this.year = year;
+		this.artist = artist;
+	}
+}
+class VideoGame {
+	constructor(name, year, developer)
+	{
+		this.name = name;
+		this.year = year;
+		this.developer = developer;
+	}
+}
+class Movies {
+	constructor(name, year, director)
+	{
+		this.name = name;
+		this.year = year;
+		this.director = director;
+	}
+}
 </script>
 </body>
 

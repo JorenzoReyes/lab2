@@ -173,34 +173,6 @@ const harry = new Cat ("Harry", 1, "Yellow", "2024-01-10")
 const hagrid = new Cat ("Hagrid", 1, "Blue", "2024-01-10")
 const bunini = new Cat ("Bunini", 1, "Yellow", "2023-12-24")
 
-const kittoNames = {
-	harrietName: "Harriet",
-	harryName: "Harry", 
-	hagridName: "Hagrid",
-	buniniName: "Bunini"
-}
-
-const kittoAge = {
-	harrietAge: "6",
-	harryAge: "1",
-	hagridAge: "1",
-	buniniName: "1"
-}
-
-const kittoEyeColor = {
-	harrietEye: "Hazel",
-	harryAge: "Hazel",
-	hagridAge: "Hazel",
-	buniniName: "Blue"
-}
-
-const dateTaken = {
-	harrietPic: new Date("2023-12-01"),
-	harryPic: new Date("2024-01-10"),
-	hagridPic: new Date("2024-01-14"),
-	buniniPic: new Date("2023-12-24")
-}
-
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
 var kittoName = document.getElementsByClassName("kittoName");
 
@@ -208,7 +180,6 @@ kittoName[0].innerHTML = harriet.name;
 kittoName[1].innerHTML = harry.name;
 kittoName[2].innerHTML = hagrid.name;
 kittoName[3].innerHTML = bunini.name;
-
 
 document.getElementById("harrietImgDate").innerHTML = harriet.date;
 document.getElementById("harryImgDate").innerHTML = harry.date;
