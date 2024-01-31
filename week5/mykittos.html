@@ -127,7 +127,7 @@ body {
 
 			<img src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
 
-			<h6 id="harrietTxt">Ayo</h6>
+			<h6 id="harrietTxt"> </h6>
 			<p><span id="harrietImgDate"> </span></p>
 			
 		</div>
@@ -158,6 +158,20 @@ body {
 	</div>
 
 <script>
+
+class Cat {
+	constructor(name, age, eyeColor, date) {
+		this.name = name;
+		this.age = age;
+		this.eyeColor = eyeColor;
+		this.date = new Date(date);
+	}
+}
+
+const harriet = new Cat ("Harriet", 6, "Hazel", "2023-12-01")
+const harry = new Cat ("Harry", 1, "Yellow", "2024-01-10")
+const hagrid = new Cat ("Hagrid", 1, "Blue", "2024-01-10")
+const bunini = new Cat ("Bunini", 1, "Yellow", "2023-12-24")
 
 const kittoNames = {
 	harrietName: "Harriet",
@@ -190,15 +204,16 @@ const dateTaken = {
 document.getElementById("bodyImage").style.backgroundImage = "url('https://media.tenor.com/z8swAVI-pygAAAAi/cinnamoroll-sanrio-characters.gif')";
 var kittoName = document.getElementsByClassName("kittoName");
 
-kittoName[0].innerHTML = kittoNames.harrietName;
-kittoName[1].innerHTML = kittoNames.harryName;
-kittoName[2].innerHTML = kittoNames.hagridName;
-kittoName[3].innerHTML = kittoNames.buniniName;
+kittoName[0].innerHTML = harriet.name;
+kittoName[1].innerHTML = harry.name;
+kittoName[2].innerHTML = hagrid.name;
+kittoName[3].innerHTML = bunini.name;
 
-document.getElementById("harrietImgDate").innerHTML = dateTaken.harrietPic;
-document.getElementById("harryImgDate").innerHTML = dateTaken.harryPic;
-document.getElementById("hagridImgDate").innerHTML = dateTaken.hagridPic;
-document.getElementById("buniniImgDate").innerHTML = dateTaken.buniniPic;
+
+document.getElementById("harrietImgDate").innerHTML = harriet.date;
+document.getElementById("harryImgDate").innerHTML = harry.date;
+document.getElementById("hagridImgDate").innerHTML = hagrid.date;
+document.getElementById("buniniImgDate").innerHTML = bunini.date;
 
 
 </script>
