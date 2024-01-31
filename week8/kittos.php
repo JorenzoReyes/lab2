@@ -109,48 +109,72 @@ body {
 	border-style: solid;
 }
 
-
+#kitto-info {
+	background-color: aliceblue;
+	text-align: center;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: lightpink;
+	font-size: 25px;
+	color:pink;
+	width:30%;
+	margin:auto;
+}
 </style>
 
-<body id="bodyImage">
+<body id='bodyImage'>
 	
-	<div class="col-12">
+	<div class='col-12'>
 		<div>
-			<a href="index.html"> <img id="backArrow" src="https://i.imgur.com/hnyXhqU.jpg"></a>
+			<a href='index.php'> <img id='backArrow' src='https://i.imgur.com/hnyXhqU.jpg'></a>
 		</div>
-		<h1 id="myTitle">My Kittos</h1>
+		<h1 id='myTitle'>My Kittos</h1>
 	</div>
 
-	<div id="harriet">
-		<h1 class="kittoName">  </h1> 
-
-		<img src="https://i.imgur.com/fUsTvrA.jpg" alt="harriet skrem">
-
-		<h6 id="harrietTxt"> </h6>
-		<p id="harrietImgDate"></p>
+	<div id='kitto-info'>
+		<p>
+		<?php
+			echo"I have ";
+			$katos=2+2;
+			echo"". $katos ."";
+			echo" cats in total!";
+			echo"<p>";
+			echo"And they are!";
+			echo"</p>";
+		?>
+		</p>
 	</div>
 
-	<div id="harry">
-		<h1 class="kittoName"></h1>
-		<img src="https://i.imgur.com/3KJ5sJy.jpg" alt="harry stairs">
+	<div id='harriet'>
+		<h1 class='kittoName'>  </h1> 
 
-		<p><span id="harryImgDate"> </span></p>
+		<img src='https://i.imgur.com/fUsTvrA.jpg' alt='harriet skrem'>
+
+		<h6 id='harrietTxt'> </h6>
+		<p id='harrietImgDate'></p>
+	</div>
+
+	<div id='harry'>
+		<h1 class='kittoName'></h1>
+		<img src='https://i.imgur.com/3KJ5sJy.jpg' alt='harry stairs'>
+
+		<p><span id='harryImgDate'> </span></p>
 			
 	</div>
 
-	<div id="hagrid">
-		<h1 class="kittoName"></h1>
-		<img src="https://i.imgur.com/uskv9su.jpg" alt="hagrid pacute">
+	<div id='hagrid'>
+		<h1 class='kittoName'></h1>
+		<img src='https://i.imgur.com/uskv9su.jpg' alt='hagrid pacute'>
 
-		<p><span id="hagridImgDate"> </span></p>
+		<p><span id='hagridImgDate'> </span></p>
 			
 	</div>
 
-	<div id="bunini">
-		<h1 class="kittoName"></h1>
-		<img src="https://i.imgur.com/cFx1SuK.jpg" alt="bunini maarte">
+	<div id='bunini'>
+		<h1 class='kittoName'></h1>
+		<img src='https://i.imgur.com/cFx1SuK.jpg' alt='bunini maarte'>
 
-		<p><span id="buniniImgDate"> </span></p>
+		<p><span id='buniniImgDate'> </span></p>
 			
 	</div>
 

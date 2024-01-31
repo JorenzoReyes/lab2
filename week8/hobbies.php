@@ -77,64 +77,34 @@ body {
 }
 </style>
     
-<body id="bodyImage">
+<body id='bodyImage'>
     
-    <div class="col-12">
+    <div class='col-12'>
         <div>
-			<a href="index.html"> <img id="backArrow" src="https://i.imgur.com/hnyXhqU.jpg"></a>
+			<a href='index.php'> <img id='backArrow' src='https://i.imgur.com/hnyXhqU.jpg'></a>
 		</div>
-		<h1 id="myTitle">My Hobbies</h1>
+		<h1 id='myTitle'>My Hobbies</h1>
 
 	</div>
 
 <div>
-	<h1 class="titles">Listening to music</h1>
-	<h3 class="subtitles">My top 10 albums, as of the moment</h3>
-	<h6 class="subtext">it was hard for me to decide what my all time favorite albums are</h6>
+	<h1 class='titles'>Listening to music</h1>
+	<h3 class='subtitles'>My top 10 albums, as of the moment</h3>
+	<h6 class='subtext'>it was hard for me to decide what my all time favorite albums are</h6>
 	
-	<div class="col-4">
-		<p> bruh</p>
-	</div>
 	
-	<div class="col-4">
-
-	</div>
-	
-	<div class="col-4">
-
-	</div>
 </div>
 
 <div>
-	<h1 class="titles">Playing video games</h1>
+	<h1 class='titles'>Playing video games</h1>
 
-	<div class="col-4">
-		<p> bruh</p>
-	</div>
 	
-	<div class="col-4">
-
-	</div>
-	
-	<div class="col-4">
-
-	</div>
 </div>
 
 <div>
-	<h1 class="titles">Watching movies</h1>
+	<h1 class='titles'>Watching movies</h1>
 
-	<div class="col-4">
-		<p> bruh</p>
-	</div>
 	
-	<div class="col-4">
-
-	</div>
-	
-	<div class="col-4">
-
-	</div>
 </div>
 
 <script>

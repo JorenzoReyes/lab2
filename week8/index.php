@@ -165,17 +165,17 @@ a:hover h2 {
 <ul class='interest col-12'>
 	<li class='col-4 text'>
 		<?php
-		echo"<a href='kittos.html'> <h2 class='boxText'> ";
+		echo"<a href='kittos.php'> <h2 class='boxText'> ";
 		function kittoName() {
 			echo"My kittos";
 		}
 		kittoName();
-		
+
 		 echo"</h2> </a>";
 		?>
 	</li>
 	<li class='col-4 text'>
-		<a href='hobbies.html'> <h2 class='boxText'> Hobbies </h2> </a>
+		<a href='hobbies.php'> <h2 class='boxText'> Hobbies </h2> </a>
 	</li>
 	<li class='col-5 text'>
 		<a href='https://s.team/y23/kbpfmwr?l=english'> <h2 class='boxText'> Steam 2023 Review </h2> </a>
