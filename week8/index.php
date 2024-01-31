@@ -164,7 +164,15 @@ a:hover h2 {
 <div class='nav'>
 <ul class='interest col-12'>
 	<li class='col-4 text'>
-		<a href='kittos.html'> <h2 class='boxText'> My Kittos </h2> </a>
+		<?php
+		echo"<a href='kittos.html'> <h2 class='boxText'> ";
+		function kittoName() {
+			echo"My kittos";
+		}
+		kittoName();
+		
+		 echo"</h2> </a>";
+		?>
 	</li>
 	<li class='col-4 text'>
 		<a href='hobbies.html'> <h2 class='boxText'> Hobbies </h2> </a>
