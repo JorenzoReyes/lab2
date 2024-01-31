@@ -92,7 +92,7 @@ a:hover h2 {
 	border-color: lightpink;
 	font-size: 25px;
 	color:pink;
-	width:50%;
+	width:30%;
 	margin:auto;
 }
 
@@ -102,7 +102,11 @@ a:hover h2 {
 }
 
 #name {
-	color:rgb(114, 74, 81);
+	color:rgb(145, 75, 151);
+}
+
+#courseSection {
+	color:rgb(75, 76, 173);
 }
 
 .center {
@@ -125,6 +129,15 @@ a:hover h2 {
  	display: inline-block;
 }
 
+#jumpscare {
+	width:350px;
+	height:350px;
+	margin:auto;
+}
+
+#jumpscareButton {
+	font-size:25px;
+}
 </style>
 </head>
 
@@ -140,7 +153,7 @@ a:hover h2 {
 
 <div id="self-info">
 	<p>Hello! welcome to my personal page!</p>
-	<p> I'm <span id="name"></span> </p>
+	<p> I'm <span id="name"></span> from <span id="courseSection"></span> </p>
 </div>
 
 <div class="nav">
@@ -157,11 +170,17 @@ a:hover h2 {
   </ul>
 </div>
 
+
+<div id="jumpscare">
+	<p id="jumpscareButton" onclick="pleaseWait()">Click me for a jumpscare.</p>
+</div>
+
+
 <script>
 const me = {
 	firstName: "Jorenzo Martin",
 	lastName: "Reyes",
-	course: "BSCS-SS",
+	course: "BSCS-",
 	section: "SS221",
 	eyeColor: "Brown",
 	age: "Not willing to disclose eme"
@@ -171,7 +190,25 @@ const name = () => {
     return me.firstName + " " + me.lastName;
 }
 
+const courseSection = () => {
+	return me.course + me.section;
+}
+
+function pleaseWait () {
+	document.getElementById("jumpscareButton").innerHTML = "Please wait for 3 seconds!";
+	jumpscare();
+}
+
+function jumpscare() {
+	setTimeout(myFunction, 3000);
+}
+
+function myFunction() {
+  document.getElementById("jumpscare").style.backgroundImage = "url(https://i.imgur.com/RcvnsAd.gif";
+}
+
 document.getElementById("name").innerHTML = name();
+document.getElementById("courseSection").innerHTML = courseSection();
 </script>
 
 
@@ -181,5 +218,6 @@ document.getElementById("name").innerHTML = name();
 <!--SOURCES
 favicon - https://www.pinterest.ph/pin/38913984274393009/
 home gif -  https://usagif.com/gif/cinnamoroll-super-happy-sticker-usagif/
+jumpscare - https://giphy.com/stickers/SanrioKorea-sanrio-cinnamoroll-sanriokorea-JmOCq0T5qEJyZ3oQj8
 
 -->
