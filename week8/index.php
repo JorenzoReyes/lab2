@@ -172,7 +172,11 @@ a:hover h2 {
 
 
 <div id="jumpscare">
-	<p id="jumpscareButton" onclick="pleaseWait()">Click me for a jumpscare.</p>
+	<p id="jumpscareButton" onclick="pleaseWait()">
+	<?php
+	echo "Click me for a jumpscare."
+	?>
+	</p>
 </div>
 
 
