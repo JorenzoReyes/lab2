@@ -137,9 +137,9 @@ body {
 			echo"I have ";
 			$katos=2+2;
 			echo"". $katos ."";
-			echo" cats in total!";
+			echo" cats!";
 			echo"<p>";
-			echo"And they are!";
+			echo"and they are!";
 			echo"</p>";
 		?>
 		</p>
