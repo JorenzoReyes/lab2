@@ -36,7 +36,7 @@ body {
   	background-color: lightpink;
   	color: white;
   	text-align: center;
-  	font-size: 300%;
+  	font-size: 80px;
 	width:100%;
 	padding:20px;
 	font-family:Mukta,serif;
@@ -120,17 +120,32 @@ body {
 	width:30%;
 	margin:auto;
 }
+
+.content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 102px;
+}
 </style>
 
 <body id='bodyImage'>
 	
-	<div class='col-12'>
+	<div id="myHeader" class='col-12'>
 		<div>
 			<a href='index.php'> <img id='backArrow' src='https://i.imgur.com/hnyXhqU.jpg'></a>
 		</div>
 		<h1 id='myTitle'>My Kittos</h1>
 	</div>
 
+<div class="content">
 	<div id='kitto-info'>
 		<p>
 		<?php
@@ -177,7 +192,7 @@ body {
 		<p><span id='buniniImgDate'> </span></p>
 			
 	</div>
-
+</div> <!--content-->
 <script>
 
 class Cat {
@@ -206,6 +221,19 @@ document.getElementById("harrietImgDate").innerHTML = harriet.date;
 document.getElementById("harryImgDate").innerHTML = harry.date;
 document.getElementById("hagridImgDate").innerHTML = hagrid.date;
 document.getElementById("buniniImgDate").innerHTML = bunini.date;
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
 </script>

@@ -1,0 +1,104 @@
+body {
+    background-color: lightblue !important;
+    color: white !important;
+}
+
+#myTitle {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    padding:20px;
+    font-size:80px;
+    font-family:Mukta,serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 29.7%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#backArrow {
+  position:absolute;
+  border-style: solid;
+  border-radius: 100%;
+  border-color:pink;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+.titles {
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 50px;
+  margin: auto;
+  width:30%;
+  border-radius:25px;
+  background-color:lightpink;
+}
+
+.subtitles {
+  border-radius:25px;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 25px;
+  width:20%;
+  background-color:lightpink;
+  margin: auto;
+}
+
+.subtext {
+  border-radius:25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size:15px;
+  text-align:center;
+  background-color:lightpink;
+  margin: auto;
+  width:20%;
+}
+
+.nav {
+text-align: center;
+}
+
+.nav ul {
+margin:auto;
+width:100%;
+}
+
+.nav li {
+ display: inline-block;
+}
+
+.text {
+margin:15px;
+border-radius: 50px;
+background-color:lightpink;
+padding:15px;
+}
+
+.fixText {
+  color: lightpink;
+}
+
+.content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 102px;
+}

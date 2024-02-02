@@ -1,0 +1,140 @@
+body {
+    background-color: lightblue !important;
+    color:white !important;
+}
+ #temp{
+   background-color:lightpink;
+ }
+
+#myTitle {
+  background-color: lightpink;
+  color:lightpink;
+  margin-left: 100%;
+  padding:20px;
+  margin:auto;
+  display:block;
+}
+
+#myPic {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin:auto;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: pink;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.interest {
+  margin-top:50px;
+  width:1080px;
+}
+
+.interest div{
+  margin-left:40px;
+  margin-right:40px;
+}
+
+
+.text {
+  margin:15px;
+  margin-right:20px;
+  border-radius: 50px;
+  background-color:lightpink;
+  padding:10px;
+}
+.text h2 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+body {
+    background-color: lightblue;
+    color: white;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 29.7%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.boxText {
+  font-size:50px;
+  font-family:Outfit,serif;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+a:hover h2 {
+  color:rgb(170, 150, 190);
+}
+
+#self-info {
+    padding:10px;
+  background-color: aliceblue;
+  text-align: center;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: lightpink;
+  font-size: 25px;
+  color:pink;
+  width:30%;
+  margin:auto;
+}
+
+.info {
+margin: auto;
+width: 60%;
+}
+
+#name {
+  color:rgb(145, 75, 151);
+}
+
+#courseSection {
+  color:rgb(75, 76, 173);
+}
+
+.center {
+margin: auto;
+width: 60%;
+border: 3px solid #73AD21;
+padding: 10px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+  margin:auto;
+  width:100%;
+}
+
+.nav li {
+   display: inline-block;
+}
+
+#jumpscare {
+  width:350px;
+  height:350px;
+  margin:auto;
+}
+
+#jumpscareButton {
+  font-size:25px;
+}
