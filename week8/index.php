@@ -138,8 +138,8 @@
 	die("Connection failed: " . $conn->connect_error);
 	}
 
-	$sql = "INSERT INTO jjreyes_myguests (name, email, website,comment,gender)
-	VALUES ('$name', '$email', '$website','$comment','$gender)";
+	$sql = "INSERT INTO jjreyes_myguests (name,email,website,comment,gender)
+	VALUES ('$name', '$email', '$website','$comment','$gender')";
 
 	if ($conn->query($sql) === TRUE) {
 	echo "New record created successfully";
